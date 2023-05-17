@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import { SectionTitle } from './SectionTitle/SectionTitle';
-// import { Statistics } from './Statistics/Statistics';
-// import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-// import { Notification } from './Notification/Notification';
+import { SectionTitle } from './SectionTitle/SectionTitle';
+import { Statistics } from './Statistics/Statistics';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
+import { Notification } from './Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -30,11 +30,13 @@ export class App extends Component {
           color: '#010101',
         }}
       >
-        {/* <SectionTitle title="Please leave feedback">
+        <SectionTitle title="Please leave feedback">
           <FeedbackOptions />
         </SectionTitle>
-        <Statistics />
-        <Notification message="There is no feedback" /> */}
+        <SectionTitle title="Statistics">
+          <Statistics />
+          <Notification />
+        </SectionTitle>
       </div>
     );
   }

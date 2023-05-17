@@ -1,3 +1,9 @@
+.feedContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 .feedbackBtn {
   .search-btn {
     color: #fff;

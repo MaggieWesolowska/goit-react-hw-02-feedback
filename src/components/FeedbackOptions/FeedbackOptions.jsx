@@ -3,7 +3,7 @@ import css from './FeedbackOptions.module.css';
 import { nanoid } from 'nanoid';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
-  <div>
+  <div className={css.feedContainer}>
     {options.map(option => (
       <button
         key={nanoid()}

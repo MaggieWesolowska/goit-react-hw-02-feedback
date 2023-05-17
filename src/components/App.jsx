@@ -37,13 +37,13 @@ export class App extends Component {
     return (
       <div
         style={{
-          height: '100vh',
           display: 'flex',
+          height: '100vh',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: 40,
           color: '#010101',
+          background: 'whitesmoke',
         }}
       >
         <SectionTitle title="Please leave feedback">

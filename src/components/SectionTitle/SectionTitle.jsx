@@ -1,8 +1,9 @@
 import propTypes from 'prop-types';
+import css from './SectionTitle.module.css';
 
 export const SectionTitle = ({ title, children }) => (
   <div>
-    <h2 className={CSS.title}>{title}</h2>
+    <h2 className={css.title}>{title}</h2>
     {children}
   </div>
 );

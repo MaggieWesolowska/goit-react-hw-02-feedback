@@ -1,12 +1,11 @@
 import propTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
-import { nanoid } from 'nanoid';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <div className={css.feedContainer}>
-    {options.map(option => (
+    {options.map((option, index) => (
       <button
-        key={nanoid()}
+        key={index}
         onClick={() => onLeaveFeedback(option)}
         className={css.feedbackBtn}
       >
